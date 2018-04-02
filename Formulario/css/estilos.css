@@ -1,0 +1,19 @@
+*{
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 500px;
+	height: 600px;
+	background: lightgray;
+	display: flex;
+	justify-content: center;
+}
+
+form{
+	justify-content: center;
+	align-content: space-around;
+	padding: 20px;
+}
+

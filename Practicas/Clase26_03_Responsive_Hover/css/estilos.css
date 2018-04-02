@@ -1,0 +1,40 @@
+.container {
+  width: 800px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.cajas {
+  width: 790px;
+  height: 250px;
+  background: pink;
+  padding: 10px;
+  display: inline-block;
+}
+.peru {
+  width: 380px;
+  height: 230px;
+  background: peru;
+}
+.yellow {
+  width: 380px;
+  height: 230px;
+  background: yellow;
+}
+.cajas2 {
+  width: 800px;
+  height: 250px;
+}
+.caja {
+  width: 790px;
+  height: 230px;
+  background: gray;
+  justify-content: space-between;
+}
+.parrafo {
+  width: 800px;
+  height: 100px;
+  background: green;
+  padding: 10px;
+}

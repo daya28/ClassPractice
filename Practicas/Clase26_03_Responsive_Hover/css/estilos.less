@@ -1,0 +1,53 @@
+@anchototal: 800px;
+@anchocajas: 790px;
+@altocajas: 250px;
+@altodos: 230px;
+@ancho: 380px;
+@colorbase: gray;
+@mainpadding: 10px;
+
+.container{
+	width: @anchototal;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: @mainpadding;
+}
+.cajas{
+	width: @anchocajas;
+	height: @altocajas;
+	background: pink;
+	padding: @mainpadding;
+	display: inline-block;
+}
+.peru{
+	width: @ancho;
+	height: @altodos;
+	@cperu: peru;
+	background: @cperu;
+}
+.yellow{
+	width: @ancho;
+	height: @altodos;
+	@cyellow: yellow;
+	background: @cyellow;
+}
+/*.cajas2{
+	width: @anchototal;
+	height: @altocajas;
+	display: inline-block;
+}
+.caja{
+	width: @anchocajas;
+	height: @altodos;
+	background: @colorbase;
+	justify-content: space-between;
+}*/
+.parrafo{
+	width: @anchototal;
+	@altop: 100px;
+	height: @altop;
+	@colorparrafo: green;
+	background: @colorparrafo;
+	padding: @mainpadding;
+}

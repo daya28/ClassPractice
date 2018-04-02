@@ -1,0 +1,43 @@
+*{ box-sizing: border-box;}
+
+
+body {background: #dddddd}
+
+header, nav, footer{ background: black }
+
+.sideBar, .bodyArea{ background: red }
+
+header{
+ 		width: 70%;
+ 		margin-top: 10px;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		}
+
+.mainContainer {
+		position: relative;
+		width: 80%;
+		margin: 0 auto;
+		padding: 0 auto;
+ }
+
+.sideBar{
+	width: 20%;
+	height: 6em;
+	float: right;
+	margin-left: auto;
+ 	margin-right: auto;
+}
+
+.bodyArea{
+	width: 50%;
+	height: 6em;
+	float: right;
+	margin-left: auto;
+ 	margin-right: auto;
+}
+
+.clearfix {clear: both;}
+
+footer{ width: 70%,
+		height: 50px; }

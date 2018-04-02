@@ -1,0 +1,29 @@
+
+.roja{
+	background: red;
+	position: relative;
+	bottom: 0;
+	left: 200px;
+	width: 200px;
+	height: 200px;
+	}
+
+.padre{
+	background: orange;
+	height: 400px;
+	width: 400px;
+	position: relative;
+}	
+
+.azul{
+	background: blue;
+	height: 200px;
+	width: 200px;
+}
+
+
+.amarillo{
+	background: yellow;
+	height: 200px;
+	width: 200px;
+}

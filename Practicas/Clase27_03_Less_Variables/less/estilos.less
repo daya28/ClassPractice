@@ -1,0 +1,41 @@
+@colorA: blue;
+@colorB: green;
+@colorC: red;
+@ancho: 200px;
+@alto: 200px;
+
+
+.container{
+	display: flex;
+	justify-content: center;
+	background: lightgray;
+	margin: 0 auto;
+	width: 600px;
+	height: 200px;
+}
+
+.circuloA{
+	width: @ancho;
+	height: @alto;
+	border-radius: 100px;	
+	background:@colorA;
+	&:hover{
+		background:lighten(@colorA,30%)};
+}
+
+.circuloB{
+	width: @ancho;
+	height: @alto;
+	border-radius: 100px;
+	background: @colorB;
+	&:hover{
+		background:lighten(@colorB,30%)};
+}
+.circuloC{
+	width: @ancho;
+	height: @alto;
+	border-radius: 100px;
+	background: @colorC;
+	&:hover{
+		background:lighten(@colorC,10%)};
+}

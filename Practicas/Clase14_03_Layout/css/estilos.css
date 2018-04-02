@@ -1,0 +1,13 @@
+*{ margin: 0; }
+
+header{ 
+	background: black;
+	width: 600px;
+	display: inline-block;
+	vertical-align: center;
+	position: relative;
+	}
+
+img{ width: 100px;
+	float: left;
+ }

@@ -1,0 +1,10 @@
+*{
+	box-sizing: border-box;;
+
+}
+
+#perfil{
+	width: 250px;
+	height: auto;
+	border-radius: 150px;
+}

@@ -1,0 +1,158 @@
+
+var entradas=[];
+
+function cargarDatosPersonales(arrayNombres){
+
+var arrayNombres = ["Daya","Venezolana","Me gusta escuchar musica"]
+
+var nombre = document.createElement('h1');
+nombre.textContent = arrayNombres[0];
+
+var nacionalidad = document.createElement('h2');
+nacionalidad.textContent = arrayNombres[1];
+
+var resumen = document.createElement('p');
+resumen.textContent = arrayNombres[2];
+
+var datosPersonales = document.getElementById('datosPersonales');
+datosPersonales.appendChild(nombre);
+datosPersonales.appendChild(nacionalidad);
+datosPersonales.appendChild(resumen);
+
+}
+
+var oveja = ["Lala"];
+var conejo = ["Pepito","Zanahorias"];
+var amigos = [oveja, conejo];
+var i,j;
+
+for(i=0;i<amigos.length;i++){
+
+	for(j=0;j<amigos[i].length;j++){
+
+		console.log(amigos[i][j]+",");
+
+	}
+
+}
+
+
+/**
+ * muestra lista de imagenes en el HTML
+ * @params lista | array, padre | nodo HTML
+ * void 
+**/
+
+//var amigosDiv = document.getElementById'('amigos'); //DEBO CREAR UN ELEMENTO CON EL DIV DE LAS IMAGENES DE MIS AMIGOS
+
+function cargarListaImagenes(lista,padre){ //padre es el nodo donde voy hacer el appendChild
+
+	var img = document.createElement('img');
+	for(i<0;i<lista.length;i++){
+		img.src = lista[i][1];	
+		padre.appendChild(img);
+	}
+}
+
+/**
+ * mostrar muro que contiene una imagen y u texto en el HTML
+ * @params lista | array, padre | nodo HTML
+ * void 
+**/
+
+var arrayMuro = ["img/esoesunafoto.jpg","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo!"];
+
+function cargarMuro(arrayMuro){
+
+	if(entradas.length > 0){
+
+		var ul = document.createElement('ul');
+
+		for(var = 0; i < entradas.length; i++){
+
+			var li = document.createElement('li');
+			var img = document.createElement('img');
+			img.src = "img/esoesunafoto.jpg";
+			img.classList.add('thumb');
+			li.appendChild(img);
+			var texto = document.createElement('p');
+			texto.textContent = entradas[i];
+			li.appendChild(texto);
+			ul.appendChild(li);
+		}
+
+
+
+	}
+
+	var muroDiv = document.createElement('muro');
+	arrayMuro.textContent = arrayMuro[0][1];
+
+	var fotomuro = document.createElement('img');
+	fotomuro.src = fotomuro[0];
+
+	var texto = document.createElement('p');
+
+	var muroDiv = document.getElementById('muro');
+	muroDiv.appendChild(fotomuro);
+	muroDiv.appendChild(texto);
+
+}
+/************************* MURO ************************/
+
+var muro = document.getElementById('muro');
+
+function cargarMuro(m){
+	if(entradas.leght > 0){
+
+		m.innerHTML = "";
+
+		var ul = document.createElement('ul');
+		ul.setAttribute('id','posts');
+	}
+}
+
+	M.appendChild(ul);
+
+/**
+ * cargar elementos del muro
+ * @params lista | array, padre | nodo HTML
+ * void 
+**/
+
+function publicar(){
+
+	var lista = document.getElementById('posts');
+	var entrada = document.getElementById('info');
+	var texto = entrada.value;
+
+			var li = document.createElement('li');
+			var img = document.createElement('img');
+			img.src = "img/esoesunafoto.jpg";
+			img.classList.add('thumb');
+			li.appendChild(img);
+			var t = document.createElement('p');
+			t.textContent = entradas[entradas.length-1];
+			li.appendChild(t);
+			lista.appendChild(li);
+
+	console.log(texto);
+
+}
+
+cargarDatosPersonales(arrayNombres);
+cargarListaImagenes(amigos,amigosDiv);
+cargarMuro(muro);
+
+var btn = document.getElementById('Enviar');
+btnEnviar.addEventListener(click,publicar);
+
+
+
+
+
+
+
+
+
+

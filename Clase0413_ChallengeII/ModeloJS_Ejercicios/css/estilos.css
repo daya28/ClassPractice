@@ -1,0 +1,30 @@
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	height: auto;
+	border-color: black;
+	border-style: solid;
+	display: flex;
+	padding: 30px;
+}
+
+input{
+	margin: 10px;
+}
+
+.boton{
+	width: 100px;	
+	margin-left: 300px;
+}
+
+.deportes{
+	display: flex;
+}
+.checkboxes{
+	flex-direction: column;
+	margin-left: 10px;
+	margin-top: 0;
+}

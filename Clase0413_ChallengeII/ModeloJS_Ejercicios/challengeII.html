@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ChallengeII</title>
+	<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+	<div class="container">
+		<form>
+			<div class="Titulo"><h2>Formulario de inscripción</h2></div>
+
+			<label for="Nombre">Nombre</label><input type="text" name="Text box" id="Nombre" placeholder="Escribe tu nombre" class="obligatorio">*
+			<!-- error: tamano de fuente y color / obLabel: lo vemos en js -->
+			<label class="error obLabel"></label><br/>
+
+			<label for="Apellido">Apellido</label><input type="Text box" name="Apellido" placeholder="Escribe tu apellido">*<br/>
+
+			<label for="Nacionalidad">Nacionalidad</label>
+				<select>
+					<option value="Combo box">Combo box</option>
+					<option value="Combo boxdos">Combo box2</option>*
+				</select>
+			
+			<label for="Fecha de Nacimiento">Fecha de Nacimiento</label><input type="Text box" placeholder="Fecha de nacimiento"><br/>
+
+			<label for="Tipo de documento">Tipo de documento</label>
+				<select>
+					<option value="DNI">DNI</option>
+					<option value="CI">CI</option>
+				</select>
+
+			<label for="Número de documento">Número de documento</label><input type="text" name="Text box" id="Numero de documento" placeholder="Escribe tu numero de documento">*<br/>
+
+			<label for="Calle">Calle</label><input type="Text box" name="Calle" placeholder="Escribe la calle o Av">*<br/>
+
+			<label for="Número">Número</label><input type="text" name="Text box" id="Nombre" placeholder="Escribe el numero"><label for="Piso">Piso</label><input type="text" name="Text box" id="Nombre" placeholder="Escribe el piso"><label for="Depto.">Depto.</label><input type="text" name="Text box" id="Nombre" placeholder="Escribe el Depto."><br/>
+
+			<label for="Provincia">Provincia</label>
+				<select>
+					<option value="Santa Fe">Santa Fe</option>
+					<option value="Cordoba">Cordoba</option>
+				</select>
+
+			<label for="Tipo de documento">Tipo de documento</label>
+				<select>
+					<option value="Ciudad">CABA</option>
+					<option value="Rosario">Rosario</option>
+				</select><br/>
+
+			<label for="Genero">Genero *</label>
+				<input type="radio" name="Radio Button">Radio Button
+				<input type="radio" name="Radio Button">Radio Button<br/>
+
+			<div class="deportes">
+			
+				<label for="Deportes">Deportes</label>
+					<div class="checkboxes">
+						<input type="checkbox">checkbox<br/>
+						<input type="checkbox">checkbox<br/>
+						<input type="checkbox">checkbox<br/>
+					</div>
+
+			</div>
+
+			<label for="Altura">Altura</label><input type="text" name="Text box" id="Altura"><label for="Peso">Peso</label><input type="text" name="Text box" id="Nombre"><br/>
+
+			<label for="Telefono">Telefono</label><input type="text" name="Text box" id="Telefono" placeholder="Escribe tu telefono"><br/>
+			<label for="Email">Email *</label><input type="text" name="Text box" id="Email" placeholder="Escribe tu email"><br/>
+
+			<div id="boton">
+				<input type="submit" value="Enviar">
+			</div>
+
+		</form>
+	</div>
+
+
+	
+	<script type="text/javascript" src="JS/estilos.js"></script>
+</body>
+</html>
